@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html style="background-color: #CCCCFF;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouSee Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="scripts.js">
+    </script>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1>YouSee Mobile App</h1>
+        </div>
+    </header>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="mockup.html">Prototype</a>
+        <div class="dropdown">
+            <button class="dropbtn">Phase 1 Documentation
+            <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-content">
+                <a href="projectplan1.html">Preliminary Project Plan</a>
+                <a href="wrs1.html">WRS Document</a>
+                <a href="creeping1.html">Creeping Rate</a>
+                <a href="presentation1.html">Presentation</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Phase 2 Documentation
+            <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-content">
+                <a href="projectplan2.html">Evolving Project Plan</a>
+                <a href="processspec.html">Process Specifications</a>
+                <a href="classdiagram.html">Class Diagram</a>
+                <a href="creeping2.html">Creeping Rate</a>
+                <a href="pig.html">Problem Interdependency Graph</a>
+                <a href="sig.html">Softgoal Interdependency Graph</a>
+                <a href="usecase.html">Use Case Diagram</a>
+                <a href="question.html">Questionnaire</a>
+                <a href="manual.html">User Manual</a>
+                <a href="vision.html">Vision Document</a>
+                <a href="wrs2.html">WRS Document</a>
+                <a href="presentation2.html">Presentation</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>
+                Purpose
+            </h1>
+            <p> Navigating through a building as a blind person could be detrimental. The purpose of our application is to help alleviate the implications of potential risk or create a better ecosystem for visionless people. </p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="main-outline">
+            <p><a href="YouSee.zip">Project Documentation Download</a></p>
+            <h1>Project Outline</h1>
+            <h2>I. Summary</h2>
+            <p>
+                Blind people should be able to navigate indoors, from one location in a building to another location in the same building or a different building. For example, a blind student or a blind visitor may need to go from one classroom to another classroom,
+                from one office to a lab, from a lab to a classroom or a washroom, etc. To reach the destination location, a blind person may need to figure out what the source (starting) location is, walk in the hallway, turn at the right place, continue
+                to walk, and stop at the destination location. Safety would be an important concern, which implies, for example, detecting obstacles and avoiding collisions. The time that it takes to reach the destination might also be a concern, especially
+                if there is not much time available to reach the destination. Familiarity with the route to be taken may also be a concern, among other things.
+            </p>
+            <p>
+                Blind people traditionally have used a dog, a cane, possibly with the help of braille indicators on the wall, oftentimes beside doors. These aids may be used together since they could be complementary to each other. There seems to be a great need for
+                blind people to have some aid that can think, see, hear, and speak.
+            </p>
+            <p>
+                Our team will build a smartphone app called YouSee. The app will be a way for volunteers to assist blind people navigate indoors using video calls. Users will be able to choose if they are a blind person or willing to volunteer. This will lead to a volunteer
+                and blind person pair being matched to allow the volunteer to help the blind person by acting as their eyes and ears using the phones camera.
+            </p>
+            <h2>II. YouSee: Preliminary Definition </h2>
+            <h4>II.1 The Domain, Stakeholders, Functional and Non-Functional Objectives</h4>
+            <p>
+                For this smartphone app, the domain will be indoors, which can consist of ground floor, this floor should have classrooms, offices, washrooms, lounges, etc. The primary stakeholder would be a blind person who needs to navigate indoors. Secondary stakeholders
+                will involve a caretaker (an assistive person) â€“ e.g., a family member - who sets the configuration of the smartphone app and comes to aid the blind person in case the blind person is lost or injured. Secondary stakeholders might also
+                include people at the accessibility department and the police, this especially in an emergency. Another secondary stakeholder would be the volunteer users.
+
+            </p>
+            <p>
+                Functional objectives would include foremost navigating indoors, primarily going from one location to another location in the same or different buildings that are connected to each other. This is done by interacting with the user interface to have video
+                calls between blind people and volunteers.
+            </p>
+            <p>
+                Non-functional objectives would include safe navigation, fast navigation, and comfortable navigation. Since the app is for blind people, usability or user-friendliness would also be an important objective, since a blind person cannot read the screen of
+                a smartphone app, especially concerning the capability of voice recognition.
+            </p>
+            <h4>II.2 Software System Requirements: Functional Requirements</h4>
+            <p>YouSee shall assist blind people by offering multiple features, including: </p>
+            <ul>
+                <li>1.0 - The application shall start searching for partner when the user taps the green button that says "search"</li>
+                <li>1.1 - The application shall make a distinct noise and vibration when the user closes it</li>
+                <li>1.2 - The application shall make a phone ringing sound while it is searching for a suitable partner</li>
+                <li>1.3 - The application shall cancel the search and make a distinct sound if the user taps the red button that says "cancel"</li>
+                <li>1.4 - The application shall state out loud "connected" and vibrate the phone once a suitable partner has been connected</li>
+                <li>1.5 - The outward facing camera shall turn on once the user is connected to a volunteer and the application shall state out loud "camera on"</li>
+                <li>1.6 - The application shall go back to searching if the time taken to connect exceeds 3 minutes after finding a suitable partner</li>
+                <li>1.7 - The application shall end the call if the user taps the red button that says "cancel" and will be brought back to landing page</li>
+                <li>1.8 - The application shall change the language of the interface depending on the userâ€™s choice from a list</li>
+                <li>1.9 - The application shall display the userâ€™s connection status</li>
+                <li>1.10 - The application theme will change when the user selects a different option</li>
+                <li>1.11 - The application shall call 911 if the user presses the button labeled â€œemergencyâ€</li>
+                <li>1.12 - The input and out of the application shall change based on the connected devices</li>
+                <li>1.13 - The application will import contacts if the user allows it</li>
+                <li>1.14 - The application will use GPS to track the userâ€™s location</li>
+                <li>1.15 - The application will notify the user if the camera is not detected with a voice prompt â€œCamera not detected.</li>
+            </ul>
+            <h4>II.3 Software System Requirements: Non-Functional Requirements</h4>
+            <p>For blind people, non-functional requirements may be more important to achieve than functional requirements. NFRs would include: </p>
+            <ul>
+                <li>1.0 - The user shall have a solid internet connection on their phone to connect with a volunteer.</li>
+                <li>1.1 - The application shall have access to language repositories in varieties of languages such as English, Mandarin, Japanese, German, French and Spanish.</li>
+                <li>1.2 - The application shall have a customizable user interface, with large/bold font by default for the visually impaired</li>
+                <li>1.3 - The application shall be able to contact EMS if the user has an emergency.</li>
+                <li>1.4 - The application shall be able to connect to bluetooth devices for audio input/output.</li>
+                <li>1.5 - The application shall be able to detect camera damage if the damage makes the app unusable.</li>
+                <li>1.6 - The application shall merge user contacts and set emergency contacts for the user.</li>
+                <li>1.7 - The application shall cache the last known GPS location in the event of disconnection. </li>
+            </ul>
+            <h2>III. The Deliverable </h2>
+            <h4>1. Issues</h4>
+            <p>The system can be extensively enhanced with the application depending on the user's smartphone. A smartphone is implemented with different types of cameras. The cameras that the application can make use of are ultra-wide to provide feedback
+                for collisions sooner and the depth camera to identify certain objects on how far or near the blind person is and provide real-time distance for the volunteer.</p>
+            <p>An issue that we face is volunteers not being helpful to blind people by not adhering to their requests. A way this issue was resolved was by adding a review system that blind users can use to rate the volunteers helpfulness. Another way that
+                the issue is resolved is by tracking the number of dropped calls and early disconnections to figure out how helpful the volunteer is. If a volunteer is rated poorly/disconnected often, then they shall be added to a blacklist that prevents
+                them from enlisting as a volunteer.</p>
+            <p>Another issue faced was defining what constitutes an Emergency, in order to avoid the ambiguity, we resolved it by defining it as a sudden loss of connection, location data and spike in noise leading to the aforementioned events.</p>
+            <h4>2. Improved Understanding </h4>
+            <p>YouSee mobile application is oriented for the visually impaired community. The application pairs the blind user with a volunteer from our app and have him/her help maneuver and navigate through the ground floor, which consist of classrooms,
+                washroom, offices, etc. There's a vast repository of languages for family or friends to help configure the application. The UX should be simplistic as possible for our intended primary stakeholder. The IOS VoiceOver and Android TalkBack
+                are built-in screen readers that will assist on navigating to the application. When YouSee is opened, there will be a green button named "Search" which would queue the user into searching for a volunteer until the request have been accepted.
+                While in queue the smartphone will ring during that duration and timeout after 3minutes when the request hasnâ€™t been accepted. The application will go back into searching until a suitable partner have been connected. Once the connection
+                between the user and volunteer have been accepted, the smartphone will respond with "Connected" along with a vibration. At this point, the partner instructs and aid the user to his/her desired location within the building. The user should
+                be pointing their smartphone outward for the volunteer to give exact real-time instructions. If a sudden incident happens to the user, there is a button labeled emergency that dials 911 call to provide quick access to an emergency dispatcher.
+                If the application closes there will be a distinct noise and vibration in which the user knows that they are not on the application.</p>
+        </section>
+        <aside id="descripton-box">
+            <h1>Project Description</h1>
+            <p>The goal of this project is to develop a mobile application targeted to support blind individuals navigate indoors.</p>
+            <hr>
+            <section class="contact-details">
+                <h2>Team Organization</h2>
+                <p>Nebil Weber<br/> Samuel Osezua<br/> Nasif Mahmood<br/> Jerry Huynh<br/> Zack Allen<br/> Jacob Chlebowski
+                </p>
+            </section>
+        </aside>
+    </div>
+
+    <footer id="main-footer">
+        <p>&copy; 2020/2021 YouSee</p>
+    </footer>
+</body>
+
+</html>
+
+</html>
