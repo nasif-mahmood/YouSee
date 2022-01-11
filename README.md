@@ -2,7 +2,7 @@
 
 ![alt text][logo]
 
-[logo]: https://github.com/nasif-mahmood/YouSee/blob/main/images/App%20Icon.png "YouSee App Logo"
+[logo]: https://github.com/nasif-mahmood/YouSee/blob/master/images/App%20Icon.png "YouSee App Logo"
 
 This is the documentation and website of a project I worked on with a group for my Requirements Engineering Class
 
